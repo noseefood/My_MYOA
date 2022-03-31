@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <!--everything inside the <head> will not be visible,<title>的内容是最上面选项栏的文字-->
+    <title>My first website-page</title>
+    <!--internal style,不需要外部的css文件-->
+    <!--font-family: Arial Bold, Arial;有多种字体选择意味着如果电脑/手机上没有安装第一种字体,则会使用第二种字体-->
+    <!--serif的意思:可以省略字体上一些小的feature-->
+    <!--在style中对单个element设置时会覆盖全局*的设定-->
+    <!--text-transform: capitalize;意味着一段话里每个单词首字母大写-->
+    <!-- RGB(red, green, blue)-->
+    <!--区分background-color和color-->
+    <!--字体绝对大小是x-small, small, large and x-large(即h2默认大小,h1对应xx-large),相对大小是smaller and larger,这是在相对其父类对比的比如h2与h1-->
+    <!--text-transform中可以设置大小写或者none无效果,capitalize即每一个单词第一个字母大写-->
+    <style> 
+        *{
+            text-align: center;  
+            background-color: rgb(40,161,140);
+            font-family: "Arial Bold", Arial, sans-serif;
+        }  
+        h1 {
+            text-align: center;
+            color: white;
+            background-color: rgb(40,50,60);
+            font-size: xx-large;
+            text-transform: capitalize;
+        }
+        p {
+            text-align: left;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My forecast</h1>
+
+    <h2><strong>Monday</strong></h2>
+    <p><strong>temperature:18&deg;C</strong></p>
+
+    <h2>Tuesday</h2>
+    <p>temperature:20&deg;C</p>  <!--20°C-->
+    <p>The special &lt;p&gt; </p> <!--需要&lt;和&gt;这样才能打印出<>这两个符号--> 
+</body>
+
+</html>
